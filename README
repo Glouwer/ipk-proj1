@@ -1,5 +1,23 @@
 Jednoducha komunikace client/server, server je konkuretni. Klient ziskava od serveru pozadovane 
 informace o uzivatelich OS Unix, na kterem je spusten server.
 
+Implementace vlastniho aplikacniho protokolu.
+
+Popis aplikacniho protokolu
+Client zpravy:
+
+001:X - X jsou prepinace bez oddelovace(NLUSGH)
+002:login
+003:uid
+
+Server zpravy:
+000:WELCOME - uvitaci zpráva clientovi po pripojeni
+201:odpověď - vrácený výsledek jako řetězec
+
+400:Chyba
+Universalni zpravy:
+202:BYE - zprava o ukonceni, kterou si client a server predaji navzajem
+
+
 Synopsis: client –h hostname –p port –l login ... –u uid ... –L –U –G –N –H –S
 Synopsis: server –p port
