@@ -1,0 +1,5 @@
+Jednoducha komunikace client/server, server je konkuretni. Klient ziskava od serveru pozadovane 
+informace o uzivatelich OS Unix, na kterem je spusten server.
+
+Synopsis: client –h hostname –p port –l login ... –u uid ... –L –U –G –N –H –S
+Synopsis: server –p port
